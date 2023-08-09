@@ -1,6 +1,6 @@
 import React from "react";
 
-const copyrights = () =>{
+const Copyrights = () =>{
     return(
         <div className="bg-gray-400 w-max-[1620px] text-black text-center">
              <p>© Ajit Kumar</p>
@@ -9,4 +9,4 @@ const copyrights = () =>{
     );
 };
 
-export default copyrights;
+export default Copyrights;

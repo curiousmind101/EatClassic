@@ -4,6 +4,7 @@ import {BsFillSaveFill,BsFillCartFill} from 'react-icons/bs';
 import {TbTruckDelivery} from 'react-icons/tb';
 import {MdFavorite, MdHelp} from 'react-icons/md';
 import {FaUserFriends, FaWallet} from 'react-icons/fa';
+import { Link } from "react-router-dom";
 const Navbar = () =>{
     const [nav, setNav] = useState(false);
     const [mode, setMode] = useState(false);
@@ -35,8 +36,9 @@ const Navbar = () =>{
                 <button className="bg-black text-white hidden md:flex items-center py-2 rounded-xl">
                     <BsFillCartFill size={20} className="mr-2"/> Cart
                 </button>
-                <button className="text-black bg-gray-300 hidden md:flex items-center py-2 rounded-xl">Sign Up</button>
+                <Link to='/login'>
                 <button className="text-black bg-white hidden md:flex items-center py-2 rounded-xl">Log In</button>
+                </Link>
             </div>
 
             {/** mobile menu */}
