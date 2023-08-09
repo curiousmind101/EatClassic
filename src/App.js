@@ -1,10 +1,5 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import HeadlinesCards from "./components/HeadlineCard";
-import Food from "./components/Food";
-import Category from "./components/Category";
-import Copyrights from "./components/Copyrights";
 import './index.css';
 import { Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
