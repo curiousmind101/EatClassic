@@ -4,12 +4,13 @@ import {BsFillSaveFill,BsFillCartFill} from 'react-icons/bs';
 import {TbTruckDelivery} from 'react-icons/tb';
 import {MdFavorite, MdHelp} from 'react-icons/md';
 import {FaUserFriends, FaWallet} from 'react-icons/fa';
+
 import { Link } from "react-router-dom";
 const Navbar = () =>{
     const [nav, setNav] = useState(false);
     const [mode, setMode] = useState(false);
     return (
-        <div className="max-w-[1620px] mx-auto flex w-full justify-between items-center p-4 fixed top-0 z-5">
+        <div className="bg-white max-w-[1620px] gap-1 mx-auto flex w-full justify-between items-center p-4 fixed top-0 z-50">
             {/* left side of navbar */}
             <div className="flex items-center" >
                 <div onClick={()=>setNav(!nav)} className="cursor-pointer z-[5]" >
@@ -26,10 +27,11 @@ const Navbar = () =>{
             </div>
 
             {/* search space */}
-            <div className="bg-gray-200 rounded-full flex items-center px-2 w-[300px] sm:w-[400px] lg:w-[500px]">
+            <div className="bg-gray-200 rounded-full flex items-center px-2 w-[300px] sm:w-2 lg:w-[500px]">
                 <AiOutlineSearch size={25}/>
                 <input className="bg-transparent p-2 focus:outline-none" type="text" placeholder="search foods"/>
             </div>
+
             {/* Cart Button */}
             
             <div className="flex items-center gap-2">
@@ -49,7 +51,7 @@ const Navbar = () =>{
 
             <div className={nav?"fixed top-0 left-0 w-[300px] h-screen bg-white z-10 duration-300":"fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10 duration-300"}>
                 <AiOutlineClose onClick={()=> setNav(!nav)} size={30} className="absolute z-5 right-4 top-4 cursor-pointer"/>
-                <h2 className="text-2xl p-4">Best <span className="font-bold">Eats</span>
+                <h2 className="text-2xl p-4">Eat<span className="font-bold">Classic</span>
                 </h2>
                 <nav>
                     <ul className="flex flex-col p-4 text-gray-800">
