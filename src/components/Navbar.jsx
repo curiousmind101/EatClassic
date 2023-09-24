@@ -17,9 +17,12 @@ const Navbar = () =>{
                     <AiOutlineMenu size={30}/>
                 </div>
                 {/* tailwind is a mobile first approach search on google */}
-                <h1 className='text-2xl sm:text-3xl lg:text-4xl ml-1'>
-                     Eat<span className="font-bold">Classic</span> 
-                </h1>
+                <Link to='/'>
+                    <h1 className='text-2xl sm:text-3xl lg:text-4xl ml-1'>
+                         Eat<span className="font-bold">Classic</span> 
+                    </h1>
+                </Link>
+                
                 <div onClick={()=>{setMode(!mode)}}className="hidden lg:flex items-center ml-3 bg-gray-200 rounded-full p-1 text-[14px] cursor-pointer">
                     <p className={mode?"bg-black text-white rounded-full p-2 duration-200":"p-2 duration-200"}> Delivery</p>
                     <p className={!mode?"bg-black text-white rounded-full p-2 duration-200":"p-2 duration-200"}> PickUp </p>
