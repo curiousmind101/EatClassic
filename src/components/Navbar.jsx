@@ -61,31 +61,31 @@ const Navbar = () =>{
                 <nav>
                     <ul className="flex flex-col p-4 text-gray-800">
                         <Link to="/orders">
-                        <li className="text-xl py-4 flex cursor-pointer"><TbTruckDelivery size={25} className="mr-4"/>Orders</li>
+                        <li onClick={()=> setNav(!nav)} className="text-xl py-4 flex cursor-pointer"><TbTruckDelivery size={25} className="mr-4"/>Orders</li>
                         </Link>
                         <Link to ="/favorites">
-                        <li className="text-xl py-4 flex cursor-pointer"><MdFavorite size={25} className="mr-4"/>Favorites</li>
+                        <li onClick={()=> setNav(!nav)} className="text-xl py-4 flex cursor-pointer"><MdFavorite size={25} className="mr-4"/>Favorites</li>
                             
                         </Link>
                         <Link to ="/wallet">
-                        <li className="text-xl py-4 flex cursor-pointer"><FaWallet size={25} className="mr-4"/>Wallet</li>
+                        <li onClick={()=> setNav(!nav)} className="text-xl py-4 flex cursor-pointer"><FaWallet size={25} className="mr-4"/>Wallet</li>
 
                         </Link>
                         <Link to ="/help">
-                        <li className="text-xl py-4 flex cursor-pointer"><MdHelp size={25} className="mr-4"/>Help</li>
+                        <li onClick={()=> setNav(!nav)} className="text-xl py-4 flex cursor-pointer"><MdHelp size={25} className="mr-4"/>Help</li>
 
                         </Link>
                         <Link to ="/promotions">
-                        <li className="text-xl py-4 flex cursor-pointer"><AiFillTag size={25} className="mr-4"/>Promotions</li>
+                        <li onClick={()=> setNav(!nav)} className="text-xl py-4 flex cursor-pointer"><AiFillTag size={25} className="mr-4"/>Promotions</li>
 
                         </Link>
                         <Link to ="/bestones">
-                        <li className="text-xl py-4 flex cursor-pointer"><BsFillSaveFill size={25} className="mr-4"/>Best Ones</li>
+                        <li onClick={()=> setNav(!nav)} className="text-xl py-4 flex cursor-pointer"><BsFillSaveFill size={25} className="mr-4"/>Best Ones</li>
 
                         </Link>
 
                         <Link to ="/invite">
-                        <li className="text-xl py-4 flex cursor-pointer"><FaUserFriends size={25} className="mr-4"/>Invite Friends</li>
+                        <li onClick={()=> setNav(!nav)} className="text-xl py-4 flex cursor-pointer"><FaUserFriends size={25} className="mr-4"/>Invite Friends</li>
 
                         </Link>
                     </ul>
