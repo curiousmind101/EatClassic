@@ -38,11 +38,13 @@ const Navbar = () =>{
             {/* Cart Button */}
             
             <div className="flex items-center gap-2">
-                <button className="bg-black text-white hidden md:flex items-center py-2 rounded-xl">
-                    <BsFillCartFill size={20} className="mr-2"/> Cart
-                </button>
+                <Link to='/cart'>
+                    <button className="bg-black text-white hidden md:flex items-center py-2 rounded-xl">
+                        <BsFillCartFill size={20} className="mr-2"/> Cart
+                    </button>
+                </Link>
                 <Link to='/login'>
-                <button className="text-black bg-white hidden md:flex items-center py-2 rounded-xl max-md:text-[4px]">Login</button>
+                    <button className="text-black bg-white hidden md:flex items-center py-2 rounded-xl max-md:text-[4px]">Login</button>
                 </Link>
             </div>
 
@@ -58,13 +60,34 @@ const Navbar = () =>{
                 </h2>
                 <nav>
                     <ul className="flex flex-col p-4 text-gray-800">
-                        <li className="text-xl py-4 flex"><TbTruckDelivery size={25} className="mr-4"/>Orders</li>
-                        <li className="text-xl py-4 flex"><MdFavorite size={25} className="mr-4"/>Favorites</li>
-                        <li className="text-xl py-4 flex"><FaWallet size={25} className="mr-4"/>Wallet</li>
-                        <li className="text-xl py-4 flex"><MdHelp size={25} className="mr-4"/>Help</li>
-                        <li className="text-xl py-4 flex"><AiFillTag size={25} className="mr-4"/>Promotions</li>
-                        <li className="text-xl py-4 flex"><BsFillSaveFill size={25} className="mr-4"/>Best Ones</li>
-                        <li className="text-xl py-4 flex"><FaUserFriends size={25} className="mr-4"/>Invite Friends</li>
+                        <Link to="/orders">
+                        <li className="text-xl py-4 flex cursor-pointer"><TbTruckDelivery size={25} className="mr-4"/>Orders</li>
+                        </Link>
+                        <Link to ="/favorites">
+                        <li className="text-xl py-4 flex cursor-pointer"><MdFavorite size={25} className="mr-4"/>Favorites</li>
+                            
+                        </Link>
+                        <Link to ="/wallet">
+                        <li className="text-xl py-4 flex cursor-pointer"><FaWallet size={25} className="mr-4"/>Wallet</li>
+
+                        </Link>
+                        <Link to ="/help">
+                        <li className="text-xl py-4 flex cursor-pointer"><MdHelp size={25} className="mr-4"/>Help</li>
+
+                        </Link>
+                        <Link to ="/promotions">
+                        <li className="text-xl py-4 flex cursor-pointer"><AiFillTag size={25} className="mr-4"/>Promotions</li>
+
+                        </Link>
+                        <Link to ="/bestones">
+                        <li className="text-xl py-4 flex cursor-pointer"><BsFillSaveFill size={25} className="mr-4"/>Best Ones</li>
+
+                        </Link>
+
+                        <Link to ="/invite">
+                        <li className="text-xl py-4 flex cursor-pointer"><FaUserFriends size={25} className="mr-4"/>Invite Friends</li>
+
+                        </Link>
                     </ul>
                 </nav>
             </div>
