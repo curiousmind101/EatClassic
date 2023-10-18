@@ -38,7 +38,7 @@ export const data = [
         id: "6",
         name: "Paneer-Do-Pyaza",
         category: "paneer",
-        image: "https://i0.wp.com/swadisht.life/en/wp-content/uploads/2023/02/Paneer-Do-Pyaza-Recipe.jpg",
+        image: "https://t4.ftcdn.net/jpg/02/39/85/49/240_F_239854985_b9wcZFEOFAnEikw7kSbmdDTYdO6A3J6U.jpg",
         price: 299,
     },
     {
