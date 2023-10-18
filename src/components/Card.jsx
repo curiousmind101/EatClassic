@@ -50,7 +50,7 @@ const Card = ({item, index})=>{
                 <div className="cursor-pointer">
                   {showCart()}
                 </div>
-                {/* <p>{value}</p> */}
+                <p>{value}</p>
             </div>
            </div>
         </>
