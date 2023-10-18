@@ -12,7 +12,7 @@ const Card = ({item, index})=>{
         setCart(cart-1);
         setValue((cart-1)*item.price);
     }
-
+    console.log(value);
     function showCart(){
         if(cart){
             return (
